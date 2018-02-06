@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/savkevip/cr-task.git"
+  },
   "scripts": {
     "dev": "webpack-dev-server",
     "prod": "webpack -p"
@@ -26,6 +30,6 @@
     "sass-loader": "6.0.6",
     "style-loader": "0.20.1",
     "webpack": "3.10.0",
-    "webpack-dev-server": "^.11.1"
+    "webpack-dev-server": "2.11.1"
   }
 }

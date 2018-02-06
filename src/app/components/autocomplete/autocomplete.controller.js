@@ -25,7 +25,7 @@ class AutocompleteController {
 
     }
 
-    _active = () => {
+    _active() {
         this.DataFactory.getData()
             .then((response) => {
                 this.results = response;
