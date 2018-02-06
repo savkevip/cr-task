@@ -14,13 +14,13 @@
     npm i
 ```
 
-#Run:
+# Run:
 
 ```sh
     npm run dev
 ```
 
-#Also I set build for production:
+# Also I set build for production:
 
 ```sh
     npm run prod
