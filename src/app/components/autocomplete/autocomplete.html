@@ -1,0 +1,13 @@
+<div class="component-wrapper">
+    <div class="autocomplete">
+        <h1>Find a restaurant</h1>
+        <h3>Type in field above name of restaurant and find where You want to eat.</h3>
+        <div class="autocomplete-input-wrapper">
+            <input class="autocomplete-input" type="text" placeholder="Search Restaurant" ng-model="vm.restaurant" ng-change="vm.search()">
+        </div>
+        <ul ng-if="vm.filteredRestaurants.length > 0" class="autocomplete-list" class="listOfResturants">
+            <li class="autocomplete-list-item" ng-repeat="restaurant in vm.filteredRestaurants | limitTo:6" ng-click="vm.selectRestaurant(restaurant)">{{restaurant.name + ", " + restaurant.address.city}}</option>
+        </ul>
+    </div>
+    <restaurant class="restaurant" choosen="vm.choosenRestaurant"></restaurant>
+</div>

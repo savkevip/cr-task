@@ -1,0 +1,20 @@
+<div class="restaurant-wrapper">
+    <div class="placeholder-name" ng-if="!vm.choosen.name">
+        <h1>Choose Your Favorite Restaurant</h1>
+    </div>
+    <div class="restaurant-data" ng-if="vm.choosen.name">
+        <img class="imgOfRestaurant" ng-src="{{!vm.choosen.images.original[0] ? vm.defaultImg : vm.choosen.images.original[0]}}" alt="">
+        <h3>{{vm.choosen.name + ", " + vm.choosen.address.city}}</h3>
+        <span>{{vm.choosen.address.street}}</span>
+        <div class="latlong">
+            <span>Longitude: {{vm.choosen.geolocation.longitude}}</span>
+            <span>Latitude: {{vm.choosen.geolocation.latitude}}</span>
+        </div>
+        <div>
+            <div class="rating">
+                {{vm.choosen.rating}} / 100
+            </div>
+            <span>{{vm.choosen.counters.reviews}} reviews</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+.component-wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  margin: auto;
+  padding: 15px;
+  background-color: #2da162;
+}
+
+.autocomplete {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 40%;
+  padding: 15px;
+}
+
+.restaurant {
+  width: 40%;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.autocomplete-input-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.autocomplete-input {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.autocomplete-list {
+  padding-left: 0px;
+  cursor: pointer;
+  background-color: #b8c7a3;
+}
+
+.autocomplete-list-item {
+  list-style-type: none;
+  padding-left: 10px;
+  &:hover {
+    background-color: #2da162;
+    border-left: 3px solid #128025;
+  }
+}
